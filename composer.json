@@ -1,5 +1,5 @@
 {
-    "name": "numiscorner/paypal-bundle",
+    "name": "cdma-numiscorner/paypal-bundle",
     "description": "Private bundle to handle communication with Paypal API",
     "type": "symfony-bundle",
     "license": "MIT",
