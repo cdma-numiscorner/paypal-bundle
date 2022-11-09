@@ -12,6 +12,9 @@ class Amount
      */
     private string $currencyCode;
 
+    /**
+     * @var string
+     */
     private string $value = "0.00";
 
     public function getCurrencyCode(): string
@@ -26,7 +29,7 @@ class Amount
     }
 
 
-    public function getValue()
+    public function getValue() : string
     {
         return $this->value;
     }
