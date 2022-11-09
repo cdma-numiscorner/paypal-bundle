@@ -31,9 +31,9 @@ class Amount
         return $this->value;
     }
 
-    public function setValue($value): Amount
+    public function setValue(string $value): Amount
     {
-        $this->value = (float)$value;
+        $this->value = $value;
         return $this;
     }
 }
