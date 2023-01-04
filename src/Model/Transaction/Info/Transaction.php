@@ -14,10 +14,10 @@ class Transaction
     private string $paypalAccountId;
 
     /**
-     * @var string
+     * @var string|null
      * @SerializedName("paypal_reference_id")
      */
-    private string $paypalReferenceId;
+    private ?string $paypalReferenceId = null;
 
     /**
      * @var string
