@@ -288,7 +288,7 @@ class Transaction
         return $this->paypalReferenceId;
     }
 
-    public function setPaypalReferenceId(string $paypalReferenceId): self
+    public function setPaypalReferenceId(?string $paypalReferenceId): self
     {
         $this->paypalReferenceId = $paypalReferenceId;
         return $this;
