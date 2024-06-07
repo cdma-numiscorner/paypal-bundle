@@ -86,6 +86,12 @@ class Transaction
     private string $protectionEligibility;
 
     /**
+     * @var string|null
+     * @SerializedName("transaction_subject")
+     */
+    private ?string $transactionSubject = null;
+
+    /**
      * @return string
      */
     public function getPaypalAccountId(): string
@@ -303,5 +309,21 @@ class Transaction
     {
         $this->paypalReferenceIdType = $paypalReferenceIdType;
         return $this;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getTransactionSubject(): ?string
+    {
+        return $this->transactionSubject;
+    }
+
+    /**
+     * @param string|null $transactionSubject
+     */
+    public function setTransactionSubject(?string $transactionSubject): void
+    {
+        $this->transactionSubject = $transactionSubject;
     }
 }
