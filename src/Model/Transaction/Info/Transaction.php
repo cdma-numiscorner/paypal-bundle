@@ -91,6 +91,12 @@ class Transaction
      */
     private ?string $transactionSubject = null;
 
+
+    /**
+     * @SerializedName("invoice_id")
+     */
+    private ?string $invoiceId = null;
+
     /**
      * @return string
      */
@@ -325,5 +331,15 @@ class Transaction
     public function setTransactionSubject(?string $transactionSubject): void
     {
         $this->transactionSubject = $transactionSubject;
+    }
+
+    public function getInvoiceId(): ?string
+    {
+        return $this->invoiceId;
+    }
+
+    public function setInvoiceId(?string $invoiceId): void
+    {
+        $this->invoiceId = $invoiceId;
     }
 }
